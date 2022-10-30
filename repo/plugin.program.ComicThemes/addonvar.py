@@ -7,7 +7,11 @@ from urllib.parse import parse_qs
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
 
 '''#####-----Build File---- -#####'''
-buildfile = 'https://1drv.ms/t/s!AnxRwFm18IL3nnZpOyVcWgSS1cVI?e=HfiDbC'
+<<<<<<< HEAD
+buildfile = 'https://www.dropbox.com/s/vlgaybo01hubtt0/builds.txt?dl=0'
+=======
+buildfile = '\\NAS\media\My_Builds\builds.txt'
+>>>>>>> parent of 14697c6 (1.1.2)
 
 '''#####-----Notifications File-----#####'''
 notify_url  = 'http://'
