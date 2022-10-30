@@ -7,7 +7,7 @@ from urllib.parse import parse_qs
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
 
 '''#####-----Build File---- -#####'''
-buildfile = '\\NAS\media\My_Builds\builds.txt'
+buildfile = 'https://1drv.ms/t/s!AnxRwFm18IL3nnZpOyVcWgSS1cVI?e=HfiDbC'
 
 '''#####-----Notifications File-----#####'''
 notify_url  = 'http://'
