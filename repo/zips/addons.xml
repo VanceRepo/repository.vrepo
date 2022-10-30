@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="plugin.program.chef19" name="[COLOR blue]Chef Matrix Wizard[/COLOR]" version="434" provider-name="drinfernoo, slamious">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR blue]Chef[/COLOR]Matrix Wizard</summary>
+        <description lang="en">[COLOR blue]Chef[/COLOR]Matrix Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon><addon id="repository.vrepo" name="Vance's Repo" version="1.1" provider-name="VanceRepo">
+    <extension point="xbmc.addon.repository" name="Vance's Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Vance's Repo</summary>
+        <description>For hosting personal builds.</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon></addons>
