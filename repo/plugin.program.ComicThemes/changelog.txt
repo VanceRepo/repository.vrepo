@@ -1,0 +1,16 @@
+1.0.3 - Added download progress to build install. 
+
+1.0.2 - Added option to encode the buildfile variable to a base64 string. 
+
+1.0.1 - Added the option to use json for build file. 
+
+1.0.0 - Basic clean up. Ready for official release.
+
+0.0.9 - Added Save Menu
+0.0.8 - Bugfixes, Fresh Start should be faster now
+0.0.7 - Added Advanced Settings presets to Maintenance. 
+0.0.6 - Added Clear Packages, the first of the Maintenance section.
+0.0.5 - Bug fixes
+0.0.4 - Added enabling of disabled addons on build first run. Added update repos on build first run. 
+0.0.3 - Added prompt notifying when new version of installed build is available.
+0.0.2 - Initial Release
