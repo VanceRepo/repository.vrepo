@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.vrepo" name="Vance's Repo" version="1.0" provider-name="VanceRepo">
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="repository.vrepo" name="Vance's Repo" version="1.0" provider-name="VanceRepo">
     <extension point="xbmc.addon.repository" name="Vance's Repo">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/addons.xml</info>
@@ -10,11 +10,11 @@
     <extension point="xbmc.addon.metadata">
         <summary>Vance's Repo</summary>
         <description>For hosting personal builds.</description>
-        <disclaimer></disclaimer>
+        <disclaimer />
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon>
+</addon></addons>
