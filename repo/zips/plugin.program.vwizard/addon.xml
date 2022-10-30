@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.program.vwizard" name="[COLOR limegreen]V[/COLOR]Wizard" version="0.0.1" provider-name="vancerepo">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.vwizard" name="[COLOR limegreen]V[/COLOR]Wizard" version="0.0.1" provider-name="vancerepo">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
@@ -137,22 +137,4 @@
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
-</addon><addon id="repository.vrepo" name="Vance's Repo" version="1.0" provider-name="VanceRepo">
-    <extension point="xbmc.addon.repository" name="Vance's Repo">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/VanceRepo/repository.vrepo/master/repo/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Vance's Repo</summary>
-        <description>For hosting personal builds.</description>
-        <disclaimer />
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon></addons>
+</addon>
