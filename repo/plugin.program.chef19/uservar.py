@@ -13,9 +13,9 @@ ART = os.path.join(PATH, 'resources', 'media')
 #########################################################
 #        User Edit Variables                            #
 #########################################################
-ADDONTITLE = '[COLOR green][B]Vance's[/B][/COLOR]Wizard'
-BUILDERNAME = 'VanceRepo'
-EXCLUDES = [ADDON_ID, 'repository.vrepo']
+ADDONTITLE = '[COLOR blue][B]Chef[/B][/COLOR]Wizard'
+BUILDERNAME = 'Diggz'
+EXCLUDES = [ADDON_ID, 'repository.diggzmatrix']
 # Text File with build info in it. Please read https://github.com/a4k-openproject/plugin.program.openwizard/wiki/Installing-Builds
 BUILDFILE = 'https://www.dropbox.com/s/vlgaybo01hubtt0/builds.txt?dl=0'
 # How often you would like it to check for build updates in days
