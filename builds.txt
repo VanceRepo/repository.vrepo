@@ -1,4 +1,4 @@
-id="plugin.program.bittenwizard"
+id="plugin.program.vwizard"
 version="1.0.0"
 zip="https://github.com/vancerepo/repository.vrepo/blob/master/plugin.program.vwizard.zip"
 
