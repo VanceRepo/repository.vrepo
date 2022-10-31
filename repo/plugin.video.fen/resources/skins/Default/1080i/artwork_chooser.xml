@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <controls>
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>common/black.png</texture>
+            <animation type="WindowOpen" reversible="false">
+                <effect type="fade" start="0" end="80" time="200" tween="sine" easing="in" />
+            </animation>
+        </control>
+        <control type="group">
+            <top>110</top>
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="50" end="100" time="200" center="auto" tween="quadratic" easing="out" />
+            </animation>
+            <control type="group">
+                <width>1920</width>
+                <control type="image">
+                    <height>860</height>
+                    <texture colordiffuse="FF4a4347">common/white.png</texture>
+                </control>
+                <control type="image">
+                    <height>100</height>
+                    <texture colordiffuse="$INFO[Window(10000).Property(fen.highlight)]">common/gradients/gradient-underlayer-horizontal-flipped.png</texture>
+                </control>
+                <control type="image">
+                    <left>15</left>
+                    <top>15</top>
+                    <width>70</width>
+                    <height>70</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <aspectratio aligny="top">keep</aspectratio>
+                    <texture colordiffuse="FFCCCCCC">common/fen.png</texture>
+                </control>
+                <control type="label">
+                    <width max="1700">auto</width>
+                    <top>35</top>
+                    <left>110</left>
+                    <height>20</height>
+                    <font>font12</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <align>center</align>
+                    <label>[UPPERCASE][B]$ADDON[plugin.video.fen 33043][/B][/UPPERCASE]</label>
+                </control>
+            </control>
+            <control type="group">
+                <left>910</left>
+                <control type="label">
+                    <width max="990">auto</width>
+                    <top>170</top>
+                    <left>5</left>
+                    <height>20</height>
+                    <font>font12</font>
+                    <textcolor>FFCCCCCC</textcolor>
+                    <align>left</align>
+                    <label>[B]$ADDON[plugin.video.fen 33071][/B]</label>
+                </control>
+                <control type="image">
+                    <width max="1000">auto</width>
+                    <aspectratio>keep</aspectratio>
+                    <align>top</align>
+                    <aligny>left</aligny>
+                    <texture>$INFO[Container(2021).ListItem.Property(image)]</texture>
+                    <animation effect="fade" start="100" end="60" time="0">WindowOpen</animation>
+                </control>
+                <control type="image">
+                    <left>710</left>
+                    <top>335</top>
+                    <height max="420">auto</height>
+                    <width max="280">auto</width>
+                    <align>bottom</align>
+                    <aligny>right</aligny>
+                    <aspectratio>fit</aspectratio>
+                    <texture>$INFO[Container(2020).ListItem.Property(image)]</texture>
+                </control>
+                <control type="image">
+                    <left>313</left>
+                    <top>210</top>
+                    <height max="83">auto</height>
+                    <width max="373">auto</width>
+                    <aspectratio>keep</aspectratio>
+                    <align>bottom</align>
+                    <aligny>center</aligny>
+                    <texture>$INFO[Container(2022).ListItem.Property(image)]</texture>
+                </control>
+            </control>
+            <control type="group">
+                <left>10</left>
+                <top>140</top>
+                <control type="grouplist">
+                    <width>1160</width>
+                    <height>780</height>
+                    <orientation>vertical</orientation>
+                    <scrolltime tween="cubic" easing="out">600</scrolltime>
+                    <itemgap>230</itemgap>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <!-- TMDb Artwork Posters -->
+                    <control type="group">
+                        <visible>Integer.IsGreater(Container(2020).NumItems,0)</visible>
+                        <control type="group">
+                            <control type="label">
+                                <width max="1160">auto</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>FFCCCCCC</textcolor>
+                                <align>left</align>
+                                <aligny>bottom</aligny>
+                                <label>[B]$ADDON[plugin.video.fen 32616][/B] $INFO[Window.Property(poster.number),(x,)]</label>
+                            </control>
+                            <control type="list" id="2020">
+                                <pagecontrol>4020</pagecontrol>
+                                <top>35</top>
+                                <width>885</width>
+                                <height>180</height>
+                                <onup>2022</onup>
+                                <ondown>4020</ondown>
+                                <orientation>horizontal</orientation>
+                                <scrolltime tween="sine">200</scrolltime>
+                                <itemlayout height="180" width="118">
+                                    <control type="image">
+                                        <left>6</left>
+                                        <top>6</top>
+                                        <height max="157">auto</height>
+                                        <width max="112">auto</width>
+                                        <aspectratio>scale</aspectratio>
+                                        <texture>$INFO[ListItem.Property(image)]</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>0</top>
+                                        <left>40</left>
+                                        <width>50</width>
+                                        <aligny>top</aligny>
+                                        <align>left</align>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture>common/overlay_selected.png</texture>
+                                        <visible>!String.IsEmpty(ListItem.Property(check_status))</visible>
+                                    </control>
+                                </itemlayout>
+                                <focusedlayout height="180" width="118">
+                                    <control type="group">
+                                        <animation effect="zoom" start="100" end="102" time="50" tween="sine" easing="inout" center="auto">Focus</animation>
+                                        <animation effect="zoom" start="102" end="100" time="50" tween="sine" easing="inout" center="auto">Unfocus</animation>
+                                        <animation effect="fade" start="100" end="60" condition="Control.HasFocus(4020)">Conditional</animation>
+                                        <control type="image">
+                                            <left>0</left>
+                                            <top>0</top>
+                                            <height>169</height>
+                                            <width>124</width>
+                                            <texture colordiffuse="FFB7B4BB">common/white.png</texture>
+                                            <visible>Control.HasFocus(2020) | Control.HasFocus(4020)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>6</left>
+                                            <top>6</top>
+                                            <height max="157">auto</height>
+                                            <width max="112">auto</width>
+                                            <aspectratio>scale</aspectratio>
+                                            <texture>$INFO[ListItem.Property(image)]</texture>
+                                        </control>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>40</left>
+                                            <width>50</width>
+                                            <aligny>top</aligny>
+                                            <align>left</align>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture>common/overlay_selected.png</texture>
+                                            <visible>!String.IsEmpty(ListItem.Property(check_status))</visible>
+                                        </control>
+                                    </control>
+                                </focusedlayout>
+                            </control>
+                            <control type="scrollbar" id="4020">
+                                <left>5</left>
+                                <top>210</top>
+                                <width>878</width>
+                                <height>10</height>
+                                <onup>2020</onup>
+                                <ondown>2021</ondown>
+                                <texturesliderbackground colordiffuse="FF302F2F">common/white.png</texturesliderbackground>
+                                <texturesliderbar colordiffuse="FF555556">common/white.png</texturesliderbar>
+                                <texturesliderbarfocus colordiffuse="FFB7B4BB">common/white.png</texturesliderbarfocus>
+                                <showonepage>false</showonepage>
+                                <orientation>Horizontal</orientation>
+                                <visible>Control.IsVisible(2020)</visible>
+                            </control>
+                        </control>
+                    </control>
+                    <!-- TMDb Artwork Fanart -->
+                    <control type="group">
+                        <visible>Integer.IsGreater(Container(2021).NumItems,0)</visible>
+                        <control type="group">
+                            <control type="label">
+                                <width max="1160">auto</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>FFCCCCCC</textcolor>
+                                <align>left</align>
+                                <aligny>bottom</aligny>
+                                <label>[B]$ADDON[plugin.video.fen 32617][/B] $INFO[Window.Property(fanart.number),(x,)]</label>
+                            </control>
+                            <control type="list" id="2021">
+                                <pagecontrol>4021</pagecontrol>
+                                <top>35</top>
+                                <width>885</width>
+                                <height>360</height>
+                                <onup>2020</onup>
+                                <ondown>4021</ondown>
+                                <orientation>horizontal</orientation>
+                                <scrolltime tween="sine">200</scrolltime>
+                                <itemlayout height="190" width="295">
+                                    <control type="image">
+                                        <left>6</left>
+                                        <top>6</top>
+                                        <height max="160">auto</height>
+                                        <width max="280">auto</width>
+                                        <aspectratio>scale</aspectratio>
+                                        <texture>$INFO[ListItem.Property(image)]</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>0</top>
+                                        <left>120</left>
+                                        <width>50</width>
+                                        <aligny>top</aligny>
+                                        <align>left</align>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture>common/overlay_selected.png</texture>
+                                        <visible>!String.IsEmpty(ListItem.Property(check_status))</visible>
+                                    </control>
+                                </itemlayout>
+                                <focusedlayout height="190" width="295">
+                                    <control type="group">
+                                        <animation effect="zoom" start="100" end="102" time="50" tween="sine" easing="inout" center="auto">Focus</animation>
+                                        <animation effect="zoom" start="102" end="100" time="50" tween="sine" easing="inout" center="auto">Unfocus</animation>
+                                        <animation effect="fade" start="100" end="60" condition="Control.HasFocus(4021)">Conditional</animation>
+                                        <control type="image">
+                                            <width>292</width>
+                                            <height>172</height>
+                                            <texture colordiffuse="FFB7B4BB">common/white.png</texture>
+                                            <visible>Control.HasFocus(2021) | Control.HasFocus(4021)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>6</left>
+                                            <top>6</top>
+                                            <height max="160">auto</height>
+                                            <width max="280">auto</width>
+                                            <aspectratio>scale</aspectratio>
+                                            <texture>$INFO[ListItem.Property(image)]</texture>
+                                        </control>
+                                        <control type="image">
+                                            <top>0</top>
+                                            <left>120</left>
+                                            <width>50</width>
+                                            <aligny>top</aligny>
+                                            <align>left</align>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture>common/overlay_selected.png</texture>
+                                            <visible>!String.IsEmpty(ListItem.Property(check_status))</visible>
+                                        </control>
+                                    </control>
+                                </focusedlayout>
+                            </control>
+                            <control type="scrollbar" id="4021">
+                                <left>5</left>
+                                <top>210</top>
+                                <width>878</width>
+                                <height>10</height>
+                                <onup>2021</onup>
+                                <ondown>2022</ondown>
+                                <texturesliderbackground colordiffuse="FF302F2F">common/white.png</texturesliderbackground>
+                                <texturesliderbar colordiffuse="FF555556">common/white.png</texturesliderbar>
+                                <texturesliderbarfocus colordiffuse="FFB7B4BB">common/white.png</texturesliderbarfocus>
+                                <showonepage>false</showonepage>
+                                <orientation>Horizontal</orientation>
+                                <visible>Control.IsVisible(2021)</visible>
+                            </control>
+                        </control>
+                    </control>
+                    <!-- TMDb Artwork Clearlogo -->
+                    <control type="group">
+                        <visible>Integer.IsGreater(Container(2022).NumItems,0)</visible>
+                        <control type="group">
+                            <control type="label">
+                                <width max="1160">auto</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>FFCCCCCC</textcolor>
+                                <align>left</align>
+                                <aligny>bottom</aligny>
+                                <label>[B]$ADDON[plugin.video.fen 33068][/B] $INFO[Window.Property(clearlogo.number),(x,)]</label>
+                            </control>
+                            <control type="list" id="2022">
+                                <pagecontrol>4022</pagecontrol>
+                                <top>35</top>
+                                <width>885</width>
+                                <height>360</height>
+                                <onup>2021</onup>
+                                <ondown>4022</ondown>
+                                <orientation>horizontal</orientation>
+                                <scrolltime tween="sine">200</scrolltime>
+                                <itemlayout height="190" width="442">
+                                    <control type="image">
+                                        <left>6</left>
+                                        <top>6</top>
+                                        <height max="160">auto</height>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture>$INFO[ListItem.Property(image)]</texture>
+                                    </control>
+                                    <control type="image">
+                                        <top>-15</top>
+                                        <left>205</left>
+                                        <width>50</width>
+                                        <aligny>top</aligny>
+                                        <align>left</align>
+                                        <aspectratio>keep</aspectratio>
+                                        <texture>common/overlay_selected.png</texture>
+                                        <visible>!String.IsEmpty(ListItem.Property(check_status))</visible>
+                                    </control>
+                                </itemlayout>
+                                <focusedlayout height="190" width="442">
+                                    <control type="group">
+                                        <animation effect="zoom" start="100" end="102" time="50" tween="sine" easing="inout" center="auto">Focus</animation>
+                                        <animation effect="zoom" start="102" end="100" time="50" tween="sine" easing="inout" center="auto">Unfocus</animation>
+                                        <animation effect="fade" start="100" end="60" condition="Control.HasFocus(4022)">Conditional</animation>
+                                        <control type="image">
+                                            <width>442</width>
+                                            <height>172</height>
+                                            <texture colordiffuse="FFB7B4BB">common/white.png</texture>
+                                            <visible>Control.HasFocus(2022) | Control.HasFocus(4022)</visible>
+                                        </control>
+                                        <control type="image">
+                                            <left>6</left>
+                                            <top>6</top>
+                                            <height max="160">auto</height>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture>$INFO[ListItem.Property(image)]</texture>
+                                        </control>
+                                        <control type="image">
+                                            <top>-15</top>
+                                            <left>205</left>
+                                            <width>50</width>
+                                            <aligny>top</aligny>
+                                            <align>left</align>
+                                            <aspectratio>keep</aspectratio>
+                                            <texture>common/overlay_selected.png</texture>
+                                            <visible>!String.IsEmpty(ListItem.Property(check_status))</visible>
+                                        </control>
+                                    </control>
+                                </focusedlayout>
+                            </control>
+                            <control type="scrollbar" id="4022">
+                                <left>5</left>
+                                <top>210</top>
+                                <width>878</width>
+                                <height>10</height>
+                                <onup>2022</onup>
+                                <ondown>2020</ondown>
+                                <texturesliderbackground colordiffuse="FF302F2F">common/white.png</texturesliderbackground>
+                                <texturesliderbar colordiffuse="FF555556">common/white.png</texturesliderbar>
+                                <texturesliderbarfocus colordiffuse="FFB7B4BB">common/white.png</texturesliderbarfocus>
+                                <showonepage>false</showonepage>
+                                <orientation>Horizontal</orientation>
+                                <visible>Control.IsVisible(2022)</visible>
+                            </control>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
