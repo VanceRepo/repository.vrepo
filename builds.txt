@@ -1,6 +1,6 @@
 id="plugin.program.bittenwizard"
 version="1.0.0"
-zip="https://github.com/vancerepo/repository.vrepo/blob/master/plugin.program.bittenwizard.zip"
+zip="https://github.com/vancerepo/repository.vrepo/blob/master/plugin.program.vwizard.zip"
 
 name="Vance Build"
 version="1.1.0"
