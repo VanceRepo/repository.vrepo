@@ -13,9 +13,9 @@ ART = os.path.join(PATH, 'resources', 'media')
 #########################################################
 #        User Edit Variables                            #
 #########################################################
-ADDONTITLE = '[COLOR lightblue][B]Bitten[/B][/COLOR]Wizard'
+ADDONTITLE = '[COLOR lightblue][B]V[/B][/COLOR]Wizard'
 BUILDERNAME = 'abittencookie'
-EXCLUDES = [ADDON_ID, 'repository.bittenbuild']
+EXCLUDES = [ADDON_ID, 'repository.vrepo']
 # Text File with build info in it. Please read https://github.com/a4k-openproject/plugin.program.openwizard/wiki/Installing-Builds
 BUILDFILE = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/builds.txt'
 # How often you would like it to check for build updates in days
