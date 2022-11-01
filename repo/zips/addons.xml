@@ -1032,7 +1032,7 @@ fix to properly parse show ID from NFO file
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
-</addon><addon id="plugin.program.vmatrix" name="[COLORcyan]V Matrix Wizard[/COLOR]" version="1.0.1" provider-name="VanceRepo">
+</addon><addon id="plugin.program.vmatrix" name="[COLORcyan]V Matrix Wizard[/COLOR]" version="1.0.2" provider-name="VanceRepo">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" optional="true" />
@@ -1060,7 +1060,7 @@ fix to properly parse show ID from NFO file
 		</news>
 		<assets>
 				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
+				<fanart />
 				<banner />
 				<clearlogo />
 				<screenshot />
