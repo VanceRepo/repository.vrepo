@@ -12,7 +12,7 @@ adult="no"
 info="http://"
 description="Just added new vwizard to addons section."
 
-name="VBuild"
+name="VBuild-stable"
 version="1.0.0"
 url="https://www.dropbox.com/s/wvd9uu4hwbr31po/VBuild1.0.0.zip?dl=1"
 minor="http://"
