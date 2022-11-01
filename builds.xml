@@ -1,11 +1,11 @@
 <builds>
 <build>
-<name>Mag-Konfluence Build(NO REVIEWS PLEASE)</name>
-<version>2.4</version>
-<url>https://magnetic.website/wizard19/Builds/Mag-Konfluence.zip</url>
-<icon>https://magnetic.website/menu%20icons/MAG-KONFLUENCE.PNG</icon>
-<fanart>https://magnetic.website/wizard19/Images/fanart.jpg</fanart>
-<description>SHOUT-OUT TO SKIMS AND CELLADOOR FOR THE SKIN</description>
+<name>V Build</name>
+<version>1.0</version>
+<url>https://www.dropbox.com/s/wvd9uu4hwbr31po/VBuild1.0.0.zip?dl=1</url>
+<icon>https://www.dropbox.com/s/086f916ri65co10/vbuild-fanart.png?dl=1</icon>
+<fanart>https://www.dropbox.com/s/086f916ri65co10/vbuild-fanart.png?dl=1</fanart>
+<description>Bare bones Aura Mod build with Fen and tmdb helper.</description>
 </build>
 <build>
 <name>Mag-Cosmic Build(NO REVIEWS PLEASE)</name>
