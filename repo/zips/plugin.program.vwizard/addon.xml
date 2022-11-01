@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.vwizard" name="[COLOR orange]VWizard[/COLOR]" version="1.0.3" provider-name="VanceRepo">
+<addon id="plugin.program.vwizard" name="[COLOR orange]VWizard[/COLOR]" version="1.0.4" provider-name="VanceRepo">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />

@@ -17,7 +17,7 @@ ADDONTITLE = '[COLOR orange][B]VWizard[/B][/COLOR]'
 BUILDERNAME = 'VanceRepo'
 EXCLUDES = [ADDON_ID, 'repository.vrepo']
 # Text File with build info in it. Please read https://github.com/a4k-openproject/plugin.program.openwizard/wiki/Installing-Builds
-BUILDFILE = 'https://www.dropbox.com/s/vlgaybo01hubtt0/builds.txt?dl=1'
+BUILDFILE = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/builds.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
