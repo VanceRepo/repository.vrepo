@@ -1,0 +1,9 @@
+<builds>
+<build>
+<name>[COLORcyan][B] VBuild [/COLOR][/B]</name>
+<version>[COLORred]Matrix[/COLOR]</version>
+<url>https://www.dropbox.com/s/wvd9uu4hwbr31po/VBuild1.0.0.zip?dl=1</url>
+<icon>https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/buildimages/vbuild-fanart.png</icon>
+<fanart>https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/buildimages/vbuild-fanart.png</fanart>
+<description>V BUILD 1.0.0</description>
+</build>
