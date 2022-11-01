@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.vmatrix" name="[COLORcyan]V Matrix Wizard[/COLOR]" version="1.0.2" provider-name="VanceRepo">
+<addon id="plugin.program.vmatrix" name="[COLORorange]V Matrix Wizard[/COLOR]" version="1.0.3" provider-name="VanceRepo">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" optional="true" />
