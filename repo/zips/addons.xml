@@ -1066,7 +1066,7 @@ fix to properly parse show ID from NFO file
 				<screenshot />
 		</assets>
 	</extension>
-</addon><addon id="plugin.program.vwizard" name="[COLOR orange]VWizard[/COLOR]" version="1.0.1" provider-name="VanceRepo">
+</addon><addon id="plugin.program.vwizard" name="[COLOR orange]VWizard[/COLOR]" version="1.0.2" provider-name="VanceRepo">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
