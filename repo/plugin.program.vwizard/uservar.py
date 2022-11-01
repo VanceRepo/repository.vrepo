@@ -13,11 +13,11 @@ ART = os.path.join(PATH, 'resources', 'media')
 #########################################################
 #        User Edit Variables                            #
 #########################################################
-ADDONTITLE = '[COLOR lightblue][B]V[/B][/COLOR]Wizard'
-BUILDERNAME = 'abittencookie'
+ADDONTITLE = '[COLOR orange][B]VWizard[/B][/COLOR]'
+BUILDERNAME = 'VanceRepo'
 EXCLUDES = [ADDON_ID, 'repository.vrepo']
 # Text File with build info in it. Please read https://github.com/a4k-openproject/plugin.program.openwizard/wiki/Installing-Builds
-BUILDFILE = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/builds.txt'
+BUILDFILE = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/builds.xml'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
@@ -109,12 +109,12 @@ REPOZIPURL = 'https://'
 # Enable Notification screen Yes or No
 ENABLE = 'Yes'
 # Url to notification file
-NOTIFICATION = 'http://'
+NOTIFICATION = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/notify.txt'
 # Use either 'Text' or 'Image'
 HEADERTYPE = 'Text'
 # Font size of header
 FONTHEADER = 'Font14'
-HEADERMESSAGE = '[COLOR lightblue][B]Bitten[/B][/COLOR]Wizard'
+HEADERMESSAGE = '[COLOR orange][B]VWizard[/B][/COLOR]'
 # url to image if using Image 424x180
 HEADERIMAGE = 'http://'
 # Font for Notification Window
