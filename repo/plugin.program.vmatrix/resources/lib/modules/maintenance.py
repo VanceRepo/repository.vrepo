@@ -1,5 +1,4 @@
 import os
-import sys
 import shutil
 import sqlite3
 import xbmc
@@ -7,7 +6,7 @@ import xbmcgui
 from .skinSwitch import swapSkins
 from .save_data import save_backup, save_restore
 from .utils import log
-from addonvar import currSkin, user_path, db_path, addon_name, textures_db, advancedsettings_folder, advancedsettings_xml, dialog, dp, xbmcPath, EXCLUDES, packages, setting_set, addon_icon, local_string
+from .addonvar import currSkin, user_path, db_path, addon_name, textures_db, advancedsettings_folder, advancedsettings_xml, dialog, dp, xbmcPath, EXCLUDES, packages, setting_set, addon_icon, local_string
 
 def purge_db(db):
 	if os.path.exists(db):

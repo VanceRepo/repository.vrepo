@@ -31,7 +31,7 @@
 			<left>13</left>
 			<width>388</width>
 			<height>100</height>
-			<label></label> 			#Add your team name here
+			<label>By Magnetic</label> 			#Add your team name here
 			<font>font60</font>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -44,7 +44,7 @@
 			<description>Icon</description>
 			<width>405</width>
 			<height>395</height>
-			<texture>chains.png</texture> 			#Add you icon here
+			<texture>test.png</texture> 			#Add you icon here
 			<bordersize>5</bordersize>
 		</control>
 		<control type="button" id="302">
@@ -81,7 +81,7 @@
 			<font>font52_title</font>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>ghostwhite</textcolor>
+			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<pagecontrol>301</pagecontrol>
 		</control>

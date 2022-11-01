@@ -49,12 +49,8 @@ def get_whitelist():
 		xbmcvfs.mkdir(addon_data)
 	with open(file_path, 'w') as whitelist_file:
 		json.dump({'whitelist': whitelist}, whitelist_file, indent = 4)
-	
-	from addonvar import EXCLUDES
-	xbmc.log('EXCLUDES = ' + str(EXCLUDES), xbmc.LOGINFO)
 
 def add_whitelist(_excludes):
-	import json
 	if xbmcvfs.exists(file_path):
 		with open(file_path, 'r') as wl:
 			whitelist  = json.loads(wl.read())['whitelist']

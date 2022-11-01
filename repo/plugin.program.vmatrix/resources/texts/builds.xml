@@ -1,0 +1,44 @@
+<builds>
+
+  <build>
+	<name>Mag-Konfluence Build(NO REVIEWS PLEASE)</name>
+	<version>2.2</version>
+	<url>https://magnetic.website/wizard19/Builds/Mag-Konfluence.zip</url>
+	<icon>https://magnetic.website/menu%20icons/MAG-KONFLUENCE.PNG</icon>
+	<fanart>https://magnetic.website/wizard19/Images/fanart.jpg</fanart>
+	<description>SHOUT-OUT TO SKIMS AND CELLADOOR FOR THE SKIN</description>
+  </build>
+  
+    <build>
+	<name>Mag-Cosmic Build(NO REVIEWS PLEASE)</name>
+	<version>1.7</version>
+	<url>https://magnetic.website/wizard19/Builds/magcosmic.zip</url>
+	<icon>https://magnetic.website/menu%20icons/MAGCOSMIC.png</icon>
+	<fanart>https://magnetic.website/wizard19/Images/fanart.jpg</fanart>
+	<description>SIMPLE BUILD USING TMDB HELPER NETFLIX VIEW STYLE. DO NOT USE ON LOW END DEVICES.</description>
+  </build>
+
+  
+  
+   <build>
+	<name>Stadium Build (NO REVIEWS PLEASE)</name>
+	<version>1.1</version>
+	<url>https://magnetic.website/wizard19/Builds/stadiumbuild.zip</url>
+	<icon>https://magnetic.website/menu%20icons/STADIUM%20BUILD.png</icon>
+	<fanart>https://magnetic.website/wizard19/Images/fanart.jpg</fanart>
+	<description>IF YOU ARE A COWBOYS FAN THIS BUILD IS FOR YOU, SHOUT-OUT TO C'MAN FOR PORTING THE SKIN OVER TO K19</description>
+  </build>
+  
+  <build>
+	<name>Magnetic Build( NO REVIEWS PLEASE )</name>
+	<version>1.2</version>
+	<url>https://magnetic.website/wizard19/Builds/magnetic.zip</url>
+	<icon>https://magnetic.website/menu%20icons/mag%20build%202.png</icon>
+	<fanart>https://magnetic.website/wizard19/Images/fanart.jpg</fanart>
+	<description>SIMPLE BUILD WITH 3 ADDONS,SHOUT-OUT TO HOBBSY FOR THE MENU BAR</description>
+  </build>
+  
+
+
+  
+</builds>

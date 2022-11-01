@@ -1,10 +1,13 @@
-import json
-import base64
 import xbmc
 import xbmcgui
+import xbmcaddon
+import json
+import base64
 import xml.etree.ElementTree as ET
 from .maintenance import clear_packages
-from addonvar import setting, setting_set, buildfile, addon_name, isBase64, headers, dialog, notify_url, local_string
+from uservar import buildfile, notify_url
+from .addonvar import setting, setting_set, addon_name, isBase64, headers, dialog, local_string, addon_id
+from .build_install import restore_binary, binaries_path
 
 current_build = setting('buildname')
 try:
@@ -16,8 +19,17 @@ class Startup:
 	
 	def check_updates(self):
 	   	if current_build == 'No Build Installed':
+	   		nobuild = dialog.yesnocustom(addon_name, 'There is currently no build installed.\nWould you like to install one now?', 'Remind Later')
+	   		if nobuild == 1:
+	   			xbmc.executebuiltin(f'ActivateWindow(10001, "plugin://{addon_id}/?mode=1",return)')
+	   		elif nobuild == 0:
+	   			setting_set('buildname', 'No Build')
+	   		else:
+	   			return
+	   	try:
+	   		response = self.get_page(buildfile)
+	   	except:
 	   		return
-	   	response = self.get_page(buildfile)
 	   	version = 0.0
 	   	try:
 	   		builds = json.loads(response)['builds']
@@ -31,8 +43,14 @@ class Startup:
 	   				if tag.find('name').text == current_build:
 	   					version = float(tag.find('version').text)
 	   					break
-	   	if version > current_version:
-	   		xbmcgui.Dialog().ok(addon_name, local_string(30047) + ' ' + current_build +' ' + local_string(30048) + '\n' + local_string(30049) + ' ' + str(current_version) + '\n' + local_string(30050) + ' ' + str(version) + '\n' + local_string(30051) + ' ' + addon_name + '.')  # New Version Available
+	   	if version > current_version and setting('update_passed') != 'true':
+	   		update_available = xbmcgui.Dialog().yesnocustom(addon_name, local_string(30047) + ' ' + current_build +' ' + local_string(30048) + '\n' + local_string(30049) + ' ' + str(current_version) + '\n' + local_string(30050) + ' ' + str(version) + '\n' + local_string(30051), 'Remind Later')
+	   		if update_available == 1:
+	   			xbmc.executebuiltin(f'ActivateWindow(10001, "plugin://{addon_id}/?mode=1",return)')
+	   		elif update_available == 0:
+	   			setting_set('update_passed', 'true')
+	   		else:
+	   			return
 	   	else:
 	   		return
 
@@ -82,14 +100,17 @@ class Startup:
 			
 	def notification(self):
 		from resources.lib.GUIcontrol import notify
-		d=notify.notify()
+		d=notify.notify('notify.xml', xbmcaddon.Addon().getAddonInfo('path'), 'Default', '720p')
 		d.doModal()
 		del d
 		setting_set('firstrunNotify', 'true')
 		setting_set('notifyversion', str(self.get_notifyversion()))
 	
 	def get_notifyversion(self):
-		response = self.get_page(notify_url).decode('utf-8')
+		try:
+			response = self.get_page(notify_url).decode('utf-8')
+		except:
+			return
 		try:
 			split_response = response.split('|||')
 			return int(split_response[0])	
@@ -97,14 +118,19 @@ class Startup:
 			return False	
 
 	def run_startup(self):
+		if binaries_path.exists():
+		    restore_binary()
 		if setting('autoclearpackages')=='true':
 			xbmc.sleep(2000)
 			clear_packages()
+		
 		if not setting('firstrunSave')=='true':
 			xbmc.sleep(2000)
 			self.save_menu()
-		self.check_updates()
+		
 		self.notify_check()
+		self.check_updates()
+		
 		if setting('firstrun') == 'true':
 			from resources.lib.modules import addons_enable
 			addons_enable.enable_addons()

@@ -5,7 +5,7 @@ import xbmc
 import xbmcaddon
 from xbmc import log
 from xml.dom.minidom import parse
-from addonvar import addons_path, addons_db, installed_date
+from .addonvar import addons_path, addons_db, installed_date
 
 addon_xmls = []
 

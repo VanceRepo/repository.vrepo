@@ -14,6 +14,6 @@ Quick Guide:
 
 5. Open the builds.xml or builds.json template file located in the resources folder and replace the template info with that of your build info. You can add or remove builds just be sure to keep the structure of the xml tags (or dict for json) the same. You can rename this file if you wish. Host the file. It doesn't matter if you use xml or json. XML is likely the more user friendly while json is more efficient. Choose whichever you are more comfortable using. 
 
-6. Open the addonvar.py file and change the build file url to the url of your hosted build xml file. Save.
+6. Open the uservar.py file and change the build file url to the url of your hosted build xml file. Save.
 
 7. Zip the plugin.program.my19wizard folder and install in Kodi. 

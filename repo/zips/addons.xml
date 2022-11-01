@@ -1,23 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="bittenbuild" name="abittencookie.github.io" version="1.0.0" provider-name="abittencookie">
-    <extension point="xbmc.addon.repository" name="abittencookie.github.io">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/abittencookie/abittencookie.github.io/master/repo/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/abittencookie/abittencookie.github.io/master/repo/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/abittencookie/abittencookie.github.io/master/repo/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Bitten_Build</summary>
-        <description>Simple Kodi Wizard</description>
-        <disclaimer />
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon><addon id="context.seren" version="2.2.0" name="Seren - Global Context Menu Items" provider-name="Nixgates">
+<addons><addon id="context.seren" version="2.2.0" name="Seren - Global Context Menu Items" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.addon" version="17.9.910" />
 		<import addon="script.module.future" version="0.17.1" />
@@ -1050,10 +1032,9 @@ fix to properly parse show ID from NFO file
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
-	
-</addon><addon id="plugin.program.vmatrix" name="V Matrix Wizard" version="1.0.0" provider-name="VanceRepo">
+</addon><addon id="plugin.program.vmatrix" name="[COLORcyan]V Matrix Wizard[/COLOR]" version="1.0.0" provider-name="VanceRepo">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" optional="true" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
@@ -1061,28 +1042,28 @@ fix to properly parse show ID from NFO file
 	</extension>
 	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">V Matrix Wizard is used for deploying internal builds.</summary>
+		<summary lang="en_GB">Simple 19 Wizard is a lightweight template for installing builds on Kodi 19 Matrix. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
 		<description lang="en_GB">Kodi 19 Wizard</description>
 		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website> 
-		<email></email>
-		<source></source>
-		<news>2.1.1 - Added Custom Backups Path 2.1.0 - Added Backup/Restore 2.0.7 - Added Whitelist, Fixes to Dropbox urls. 2.0.5 - Added Authorize Debrid, Added language strings to most labels, code cleanup 2.0.3 - Added video preview 2.0.2 - Fixed issue with backup restore  2.0.0 Major changes to the framework of the addon. Allocated most of the code to modules. Added some new modules. Added support for Dropbox links. Fixed cancel download. 1.1.3 - Fix to save items when items not selected 1.1.2 - Remade service.py, small Bugfixes. 1.1.1 - Fixed an issue with update checker. 1.1.0 - Fixed Resolveurl path in save data. 1.0.9 - Added settings to main menu. 1.0.8 - Fixed percentage during build download, 1.0.7 - Added option to link to another xml or json file. This is good for teams or community wizards as each builder can have their own xml. Also changed format of the builds xml. Please refer to builds_newformat.xml located in the resources folder. The old format will still work but if the user is running an older version of the wizard, they'll only see the version number as the name. They'll want to update to fix that. 1.0.6 - Added Notifications Dialog. Special thanks to Blue for art and helping with the design. 1.0.5 - Bugfixes. 1.0.3 - Added download progress to build install. 1.0.2 - Added option to encode the buildfile variable to a base64 string. 1.0.1 - Added the option to use json for build file. 1.0.0 - Basic clean up. Ready for official release. 0.0.9 - Added Save Menu, 0.0.8 - Bug fixes, 0.0.7 - Added Advanced Settings presets to Maintenance. 0.0.6 - Added Clear Packages, the first of the Maintenance section.
+		<forum />
+		<website /> 
+		<email />
+		<source />
+		<news>2.1.6.1 - Fix permissions error on Windows devices. Added keeping binaries list when installs fail. 2.1.6 - Added binary addon installation to build install. Fix for Dropbox zips not showing the file length. Fixed error on startup when buildfile or notify urls are invalid. 2.1.5 - Added option to cancel prompts for build update and no build. 2.1.4 - Small fix to Whitelist 2.1.3 - Added prompt that opens the Build Menu when there's an update or now build installed. Added Force Close shortcut. Restructured addon a bit. There is now a uservar py in root of addon for user variables. 2.1.1 - Added Custom Backups Path 2.1.0 - Added Backup/Restore 2.0.7 - Added Whitelist, Fixes to Dropbox urls. 2.0.5 - Added Authorize Debrid, Added language strings to most labels, code cleanup 2.0.3 - Added video preview 2.0.2 - Fixed issue with backup restore  2.0.0 Major changes to the framework of the addon. Allocated most of the code to modules. Added some new modules. Added support for Dropbox links. Fixed cancel download. 1.1.3 - Fix to save items when items not selected 1.1.2 - Remade service.py, small Bugfixes. 1.1.1 - Fixed an issue with update checker. 1.1.0 - Fixed Resolveurl path in save data. 1.0.9 - Added settings to main menu. 1.0.8 - Fixed percentage during build download, 1.0.7 - Added option to link to another xml or json file. This is good for teams or community wizards as each builder can have their own xml. Also changed format of the builds xml. Please refer to builds_newformat.xml located in the resources folder. The old format will still work but if the user is running an older version of the wizard, they'll only see the version number as the name. They'll want to update to fix that. 1.0.6 - Added Notifications Dialog. Special thanks to Blue for art and helping with the design. 1.0.5 - Bugfixes. 1.0.3 - Added download progress to build install. 1.0.2 - Added option to encode the buildfile variable to a base64 string. 1.0.1 - Added the option to use json for build file. 1.0.0 - Basic clean up. Ready for official release. 0.0.9 - Added Save Menu, 0.0.8 - Bug fixes, 0.0.7 - Added Advanced Settings presets to Maintenance. 0.0.6 - Added Clear Packages, the first of the Maintenance section.
 0.0.5 - Bug fixes
 0.0.4 - Added enabling of disabled addons on build first run. Added update repos on build first run. 
 0.0.3 - Added prompt notifying when new version of installed build is available.
 0.0.2 - Initial Release
 		</news>
 		<assets>
-				<icon>icon.png</icon>
-				<fanart>fanart.jpg</fanart>
-				<banner></banner>
-				<clearlogo></clearlogo>
-				<screenshot></screenshot>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<banner />
+				<clearlogo />
+				<screenshot />
 		</assets>
 	</extension>
 </addon><addon id="plugin.program.vwizard" name="[COLOR lightblue]V[/COLOR]Wizard" version="1.0.0" provider-name="VanceRepo">
@@ -3421,62 +3402,6 @@ v1.1.25
         <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
         <website />
         <source>https://github.com/kodi-community-addons/script.skin.helper.service</source>
-    </extension>
-</addon><addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.45" provider-name="marcelveldt and others">
-    <requires>
-		<import addon="xbmc.python" version="3.0.0" />
-        <import addon="xbmc.addon" version="12.0.0" />
-        <import addon="script.module.metadatautils" version="1.0.31" />
-        <import addon="script.module.simplecache" version="2.0.2" />
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="plugin.py">
-        <provides>video audio</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="login" />
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Ready to use widgets for all kind of media types</summary>
-        <description />
-	<news>
-Version 1.0.45
-* Change settings.xml
-Version 1.0.44
-* fix for similar
-
-Version 1.0.43
-* back old code for "recommended movies"
-* more py3 changes
-
-Version 1.0.42 (2020-09-13 wuff)
-* replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
-
-Version 1.0.41 (2020-09-07 wuff)
-* Fix icons
-
-Version 1.0.40 (2020-05-16 wuff)
-* Remove python requirement for Kodi 18/19 compat
-
-Version 1.0.39 (2019-12-24 wuff)
-* Python 3/Kodi 19 compatibility fixes
-
-Version 1.0.38 (2019-02-25 patrick-klein)
-* similar score weights tweaks
-* other fixes and updates
-
-Version 1.0.37
-* last update from marcelveldt
-</news>
-		<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <language />
-        <platform>all</platform>
-        <license>GPL v2.0</license>
-        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-        <website />
-        <source>https://github.com/kodi-community-addons/script.skin.helper.widgets</source>
     </extension>
 </addon><addon id="script.skinshortcuts" name="Skin Shortcuts" version="2.0.1" provider-name="BigNoid, marcelveldt, SiLVO">
     <requires>

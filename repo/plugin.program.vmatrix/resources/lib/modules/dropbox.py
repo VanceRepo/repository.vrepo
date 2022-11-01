@@ -2,7 +2,7 @@ import xbmc
 import os
 import shutil
 import urllib
-from resources.lib.modules.utils import Log
+from .utils import Log
 
 def DownloadFile(url,dst):
 	if not xbmc.getCondVisibility('System.HasAddon(script.module.requests)'):

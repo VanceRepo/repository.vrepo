@@ -32,10 +32,13 @@ class Downloader:
 			return requests.get(self.url, headers=self.headers, stream=stream)
 	
 	def get_length(self, response, meth = 'session'):
-		if meth in ['session', 'requests']:
-			return response.headers['content-length']
-		elif meth=='urllib':
-			return response.getheader('content-length')
+		try:
+			if meth in ['session', 'requests']:
+				return response.headers['X-Dropbox-Content-Length']
+			elif meth=='urllib':
+				return response.getheader('content-length')
+		except KeyError:
+			return None
 	
 	def download_build(self, name,zippath,meth='session', stream=True):
 		if meth in 'session':
@@ -46,7 +49,7 @@ class Downloader:
 			response = self.get_urllib(decoding=False)
 		
 		length = self.get_length(response,meth=meth)
-		if length:
+		if length is not None:
 			length2 = int(int(length)/1000000)
 		else:
 			length2 = 'Unknown Size'
@@ -85,14 +88,11 @@ class Downloader:
 		else:
 			dp.update(50, 'Downloading your build...')
 			blocksize = max(1000000, 500000)
-			while True:
-				buf = response.read(blocksize)
-				if not buf:
-					break
+			for chunk in response.iter_content(blocksize):
 				if dp.iscanceled():
 					cancelled = True
 					break
-				tempzip.write(buf)
+				tempzip.write(chunk)
 		if cancelled:
 			xbmc.sleep(1000)
 			os.unlink(zippath)

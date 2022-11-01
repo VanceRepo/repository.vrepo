@@ -1,10 +1,7 @@
 import xbmc
-import xbmcvfs
 import os
 import shutil
-from .whitelist import file_path
-from addonvar import user_path, data_path, setting, addon_id, packages, addons_path, dialog, setting_set, EXCLUDES
-
+from .addonvar import user_path, data_path, setting, addon_id, packages, EXCLUDES
 
 def backup(path, file):
 	if os.path.exists(os.path.join(path, file)):
@@ -34,7 +31,7 @@ def save_check(EXCLUDES):
 	return EXCLUDES
 
 def save_backup():
-	backup(user_path, addon_id)
+	backup(data_path, addon_id)
 	if setting('savefavs')=='true':
 		try:backup(user_path, 'favourites.xml')
 		except: pass
@@ -52,7 +49,7 @@ def save_backup():
 		except: pass
 
 def save_restore():
-	restore(user_path, addon_id)
+	restore(data_path, addon_id)
 	if setting('savefavs')=='true':
 		try: restore(user_path, 'favourites.xml')
 		except: pass

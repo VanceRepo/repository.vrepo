@@ -1,3 +1,13 @@
+2.1.6.1 - Fix permissions error on Windows devices. Added keeping binaries list when installs fail. 
+
+2.1.6 - Added binary addon installation to build install. Fix for Dropbox zips not showing the file length. Fixed error on startup when buildfile or notify urls are invalid.
+
+2.1.5 - Added option to cancel prompt for build update and no build. 
+
+2.1.4 - Small fix to Whitelist. 
+
+2.1.3 - Added prompt that opens the Build Menu when there's an update or now build installed. Added Force Close shortcut. Restructured addon a bit. There is now a uservar py in root of addon for user variables. 
+
 2.1.1 - Added Custom Backups Path
 
 2.1.0 - Added Backup/Restore 

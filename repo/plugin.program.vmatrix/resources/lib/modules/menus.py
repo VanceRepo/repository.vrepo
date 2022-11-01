@@ -1,11 +1,12 @@
 import sys
 import json
+import xbmc
 import xbmcplugin
-import xbmcvfs
 from .utils import add_dir
 from .parser import Parser
 from .dropbox import DownloadFile
-from addonvar import addon_icon, addon_fanart, local_string, buildfile, build_file, authorize
+from uservar import buildfile
+from .addonvar import addon_icon, addon_fanart, local_string, build_file, authorize
 
 handle = int(sys.argv[1])
 
@@ -23,6 +24,7 @@ def main_menu():
 	add_dir(local_string(30015),'',9,addon_icon,addon_fanart,local_string(30016),isFolder=False)  # Settings
 
 def build_menu():
+    xbmc.executebuiltin('Dialog.Close(busydialog)')
     xbmcplugin.setPluginCategory(handle, local_string(30010))
     if buildfile.startswith('https://www.dropbox.com'):
     	DownloadFile(buildfile, build_file)
@@ -61,12 +63,13 @@ def submenu_maintenance():
 	add_dir(local_string(30026),'',10,addon_icon,addon_fanart,local_string(30026))  # Authorize Debrid Services
 	add_dir(local_string(30064),'',11,addon_icon,addon_fanart,local_string(30064), isFolder=False)  # Edit Whitelist
 	add_dir('Backup/Restore','',12,addon_icon,addon_fanart,'Backup and Restore')  # Backup Build
+	add_dir('Force Close','', 18, addon_icon,addon_fanart,'Force Close Kodi')
 
 def backup_restore():
 	add_dir('Backup Build','',13,addon_icon,addon_fanart,'Backup Build', isFolder=False)  # Backup Build
 	add_dir('Restore Backup','',14, addon_icon,addon_fanart,'Restore Backup')  # Restore Backup
 	add_dir('Change Backups Location','',16,addon_icon,addon_fanart,'Change the location where backups will be stored and accessed.', isFolder=False)  # Backup Location
-	add_dir('Reset Backup Location','',17,addon_icon,addon_fanart,'Set the backup location to its default.', isFolder=False)  # Reset Backup Locatiin
+	add_dir('Reset Backups Location','',17,addon_icon,addon_fanart,'Set the backup location to its default.', isFolder=False)  # Reset Backup Location
 
 def authorize_menu():
     xbmcplugin.setPluginCategory(handle, local_string(30027))  # Authorize Services

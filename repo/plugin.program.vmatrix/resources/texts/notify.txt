@@ -1,3 +1,12 @@
-1
+12
 |||
-Place yours notifications below the 3 lines. Raise the value of the number above the 3 lines to prompt a popup on Kodi startup. Host this file and add the url to the notify_url variable located in the addonvar.py file. 
+WELCOME TO MAGNETIC WIZARD, PLEASE ENJOY THE BUILDS AND DONT MAKE A MESS :-)
+
+UPDATED BUILDS
+MAG-KONFLUENCE- 1.9- PLEASE UPDATE
+
+
+
+
+
+ 

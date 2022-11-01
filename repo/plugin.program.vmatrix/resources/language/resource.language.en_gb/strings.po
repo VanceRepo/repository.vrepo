@@ -224,7 +224,7 @@ msgid "New Version:"
 msgstr ""
 
 msgctxt "#30051"
-msgid "You can update from the Build Menu in"
+msgid "Would you like to install it now?"
 msgstr ""
 
 msgctxt "#30052"
