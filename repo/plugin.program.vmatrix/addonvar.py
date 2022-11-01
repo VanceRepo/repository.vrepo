@@ -9,7 +9,7 @@ from datetime import datetime
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
 
 '''#####-----Build File-----#####'''
-buildfile = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/builds.xml'
+buildfile = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/builds.json'
 
 '''#####-----Notifications File-----#####'''
 notify_url  = 'https://raw.githubusercontent.com/vancerepo/repository.vrepo/master/notify.txt'
