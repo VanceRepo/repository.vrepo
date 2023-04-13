@@ -1,6 +1,6 @@
 
 name="VBuild"
-version="2.3"
+version="2.4"
 url="https://www.dropbox.com/s/hf41chv4tzpcjn5/VBuild2.3.zip?dl=1"
 minor="http://"
 gui="https://www.dropbox.com/s/wr0lidb2o38cgoi/VBuild2.3_guisettings.zip?dl=1"
