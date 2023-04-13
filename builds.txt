@@ -1,9 +1,9 @@
 
 name="VBuild"
-version="2.2"
-url="https://www.dropbox.com/s/dv1ae2evo58ewff/VBuild2.2.zip?dl=1"
+version="2.3"
+url="https://www.dropbox.com/s/qbw1zw2803ac22f/VBuild2.3.zip?dl=1"
 minor="http://"
-gui="https://www.dropbox.com/s/nvvhx8znjmcbwja/VBuild2.2_guisettings.zip?dl=1"
+gui="https://www.dropbox.com/s/i0w68nuoj8r1hwn/VBuild2.3_guisettings.zip?dl=1"
 kodi="19.4"
 theme="http://"
 icon="https://www.dropbox.com/s/ug56a861o3u2mk4/vbuild2.0.png?dl=1"
@@ -11,7 +11,7 @@ fanart="http://"
 preview="http://"
 adult="no"
 info="http://"
-description="TMDB is now being used with fixed players for fen. Hopefully fixed buffering issues. If persistent, apply high-end hardware tweak in vwizard."
+description="Debrid manager added for future builds. Last build accidentally had my personal debrid account active causing issues with the account."
 
 
 name="AuraMod Base Install"
