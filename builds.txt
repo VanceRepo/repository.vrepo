@@ -1,9 +1,9 @@
 
 name="VBuild"
 version="2.3"
-url="https://www.dropbox.com/s/qbw1zw2803ac22f/VBuild2.3.zip?dl=1"
+url="https://www.dropbox.com/s/hf41chv4tzpcjn5/VBuild2.3.zip?dl=1"
 minor="http://"
-gui="https://www.dropbox.com/s/i0w68nuoj8r1hwn/VBuild2.3_guisettings.zip?dl=1"
+gui="https://www.dropbox.com/s/wr0lidb2o38cgoi/VBuild2.3_guisettings.zip?dl=1"
 kodi="19.4"
 theme="http://"
 icon="https://www.dropbox.com/s/ug56a861o3u2mk4/vbuild2.0.png?dl=1"
