@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="metadata.tvshows.themoviedb.org-3.5.14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/metadata.tvshows.themoviedb.org/metadata.tvshows.themoviedb.org-3.5.14.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="repository.vrepo-1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repository.vrepo-1.2.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

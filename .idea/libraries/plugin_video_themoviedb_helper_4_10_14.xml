@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.video.themoviedb.helper-4.10.14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.video.themoviedb.helper/plugin.video.themoviedb.helper-4.10.14.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

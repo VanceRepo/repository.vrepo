@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.video.jetproxy-1.0.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.video.jetproxy/plugin.video.jetproxy-1.0.3.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

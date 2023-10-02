@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="service.xbmc.versioncheck-0.5.23+matrix.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/service.xbmc.versioncheck/service.xbmc.versioncheck-0.5.23+matrix.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

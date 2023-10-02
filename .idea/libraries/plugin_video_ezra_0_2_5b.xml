@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.video.ezra-0.2.5b">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.video.ezra/plugin.video.ezra-0.2.5b.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

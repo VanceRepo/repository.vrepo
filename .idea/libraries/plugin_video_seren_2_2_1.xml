@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.video.seren-2.2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.video.seren/plugin.video.seren-2.2.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

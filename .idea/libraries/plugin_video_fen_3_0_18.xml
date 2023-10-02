@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.video.fen-3.0.18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.video.fen/plugin.video.fen-3.0.18.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

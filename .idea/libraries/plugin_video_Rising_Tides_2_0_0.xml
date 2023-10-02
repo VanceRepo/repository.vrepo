@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.video.Rising.Tides-2.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.video.Rising.Tides/plugin.video.Rising.Tides-2.0.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

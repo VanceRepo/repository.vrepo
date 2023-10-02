@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.program.autocompletion-2.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.program.autocompletion/plugin.program.autocompletion-2.0.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

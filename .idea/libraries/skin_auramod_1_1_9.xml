@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="skin.auramod-1.1.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/skin.auramod/skin.auramod-1.1.9.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

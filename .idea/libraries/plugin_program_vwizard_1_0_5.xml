@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plugin.program.vwizard-1.0.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/plugin.program.vwizard/plugin.program.vwizard-1.0.5.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="script.module.tzdata-2021.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/script.module.tzdata/script.module.tzdata-2021.5.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

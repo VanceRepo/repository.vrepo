@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="skin.cosmic-1.0.65">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/skin.cosmic/skin.cosmic-1.0.65.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="game.controller.snes-1.0.30">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/zips/game.controller.snes/game.controller.snes-1.0.30.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
